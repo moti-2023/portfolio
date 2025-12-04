@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Graphic Design<br><span class="highlight">Portfolio</span></h1>
+                <p class="hero-subtitle">Logo & Brand Design Specialist</p>
+                <a href="#portfolio" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-graphic">
+                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="80" width="280" height="180" rx="15" fill="#2c5282" opacity="0.9"/>
+                    <rect x="50" y="120" width="280" height="50" fill="#1a365d"/>
+                    <circle cx="100" cy="220" r="20" fill="#d4af37"/>
+                    <circle cx="130" cy="220" r="20" fill="#d4af37" opacity="0.7"/>
+                    <rect x="200" y="210" width="100" height="8" rx="4" fill="#fff" opacity="0.5"/>
+                    <rect x="200" y="225" width="80" height="8" rx="4" fill="#fff" opacity="0.5"/>
+                    <rect x="200" y="100" width="250" height="200" fill="#3182ce" opacity="0.8"/>
+                    <rect x="220" y="50" width="210" height="60" fill="#2c5282"/>
+                    <polygon points="325,30 220,50 430,50" fill="#1a365d"/>
+                    <rect x="240" y="130" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="290" y="130" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="340" y="130" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="390" y="130" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="240" y="200" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="290" y="200" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="340" y="200" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="390" y="200" width="40" height="50" fill="#fff" opacity="0.3"/>
+                    <rect x="300" y="250" width="50" height="50" fill="#1a365d"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-simple">
+                <p class="about-intro">I'm a graphic designer specializing in logo design and branding. I create unique designs for coffee brands, fintech companies, and businesses using GIMP, Figma, and Canva.</p>
+                <div class="tools-section">
+                    <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 1.5rem;">Design Tools I Use</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-icon">🎨</div>
+                            <h4>GIMP</h4>
+                            <p>Logo Design</p>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">✏️</div>
+                            <h4>Figma</h4>
+                            <p>UI/UX Design</p>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">🖌️</div>
+                            <h4>Canva</h4>
+                            <p>Graphics & Branding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- SR Coffee Logo -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/sr-coffee.jpg" alt="SR Coffee Logo">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>SR Coffee Logo</h3>
+                        <p>Designed with GIMP & Canva</p>
+                        <span class="tool-badge">GIMP</span>
+                        <span class="tool-badge">Canva</span>
+                    </div>
+                </div>
+
+                <!-- Aimo Coffee Logo -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/aimo-coffee.jpg" alt="Aimo Coffee Logo">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aimo Coffee Logo</h3>
+                        <p>Designed with GIMP</p>
+                        <span class="tool-badge">GIMP</span>
+                    </div>
+                </div>
+
+                <!-- Aimo Logo (Circle) -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/aimo-logo.jpg" alt="Aimo Logo">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aimo Logo</h3>
+                        <p>Circular logo design with GIMP</p>
+                        <span class="tool-badge">GIMP</span>
+                    </div>
+                </div>
+
+                <!-- MobiCash Logo -->
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="images/mobicash.jpg" alt="MobiCash Logo">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>MobiCash Logo</h3>
+                        <p>Designed with Figma & Canva</p>
+                        <span class="tool-badge">Figma</span>
+                        <span class="tool-badge">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <h3>Let's Work Together</h3>
+                    <p>Need a logo or graphic design? Send me a message!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>contact@yourdesign.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Your City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Popup Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
